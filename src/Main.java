@@ -1,6 +1,7 @@
 import org.w3c.dom.views.AbstractView;
 
 import problems.FindDuplicate;
+import problems.LargestPerimeter;
 import problems.MinOperations;
 import problems.PalindromeNumber;
 import problems.RearrangeArray;
@@ -10,12 +11,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		PalindromeNumber n = new PalindromeNumber();
-		boolean result = n.isPalindrome(2147483647);
+		LargestPerimeter p = new LargestPerimeter();
+		
+		long result = p.largestPerimeter2(new int[] {1,12,1,2,5,50,3});
 		
 		System.out.println(result);
-		
-		
 	}
 	
 	public static void printArray(int[] array) {
