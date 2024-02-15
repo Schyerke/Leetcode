@@ -1,6 +1,5 @@
-import org.w3c.dom.views.AbstractView;
-
 import problems.FindDuplicate;
+import problems.FindMedianSortedArrays;
 import problems.LargestPerimeter;
 import problems.MinOperations;
 import problems.PalindromeNumber;
@@ -11,9 +10,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		LargestPerimeter p = new LargestPerimeter();
-		
-		long result = p.largestPerimeter2(new int[] {1,12,1,2,5,50,3});
+		FindMedianSortedArrays f = new FindMedianSortedArrays();
+		double result = f.findMedianSortedArrays(new int[] {1,3}, new int[] {2});
 		
 		System.out.println(result);
 	}
