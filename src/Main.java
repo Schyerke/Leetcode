@@ -1,4 +1,5 @@
 import problems.FindDuplicate;
+import problems.FindLeastNumOfUniqueInts;
 import problems.FindMedianSortedArrays;
 import problems.IsValidSudoku;
 import problems.LargestPerimeter;
@@ -11,20 +12,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		char[][] matrix = {
-                {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
-        };
-		
-		IsValidSudoku s = new IsValidSudoku();
-		boolean result = s.isValidSudoku(matrix);
+		FindLeastNumOfUniqueInts f = new FindLeastNumOfUniqueInts();
+		int result = f.findLeastNumOfUniqueInts(new int[] {2,1,1,3,3,3}, 3);
 		
 		System.out.println(result);
 	}
